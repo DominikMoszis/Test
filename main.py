@@ -127,3 +127,13 @@ website1 = "https://wikipedia.com"
 slice = slice(8,-4)
 print(website[slice])
 print(website1[slice])
+
+age = input("What is your age: ")
+age = int(age)
+
+if (age == 100):
+    print ("You are a centenarian.")
+elif (age >= 18):
+    print("You are an adult.")
+else:
+    print("You are a child.")
