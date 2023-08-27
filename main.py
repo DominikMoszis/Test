@@ -147,3 +147,12 @@ if temp >= 0 and temp <= 30:
 elif temp < 0 or temp > 30:
     print("The tempreture is bad today.")
     print("Stay inside.")
+
+#not je negace jako v php
+temp = input("Jaké je to teplo venku: ")
+temp = int(temp)
+
+if not(temp >= 0 and temp <= 30):
+    print("Venku je ošklivě.")
+elif not(temp < 0 or temp > 30):
+    print("Dneska je venku hezké počasí.")
