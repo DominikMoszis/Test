@@ -138,4 +138,12 @@ elif (age >= 18):
 else:
     print("You are a child.")
 
-print("ahoj")
+temp = input("What is the tempreture outside: ")
+temp = int(temp)
+
+if temp >= 0 and temp <= 30:
+    print("The tempreture is good today.")
+    print("Go outside!")
+elif temp < 0 or temp > 30:
+    print("The tempreture is bad today.")
+    print("Stay inside.")
