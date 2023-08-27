@@ -156,3 +156,5 @@ if not(temp >= 0 and temp <= 30):
     print("Venku je ošklivě.")
 elif not(temp < 0 or temp > 30):
     print("Dneska je venku hezké počasí.")
+
+print("ahoj")
