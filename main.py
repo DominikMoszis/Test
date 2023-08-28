@@ -128,33 +128,34 @@ slice = slice(8,-4)
 print(website[slice])
 print(website1[slice])
 
-age = input("What is your age: ")
-age = int(age)
+#age = input("What is your age: ")
+#age = int(age)
 
-if (age == 100):
-    print ("You are a centenarian.")
-elif (age >= 18):
-    print("You are an adult.")
-else:
-    print("You are a child.")
+#if (age == 100):
+#    print ("You are a centenarian.")
+#elif (age >= 18):
+#    print("You are an adult.")
+#else:
+#    print("You are a child.")
 
-temp = input("What is the tempreture outside: ")
-temp = int(temp)
+#temp = input("What is the tempreture outside: ")
+#temp = int(temp)
 
-if temp >= 0 and temp <= 30:
-    print("The tempreture is good today.")
-    print("Go outside!")
-elif temp < 0 or temp > 30:
-    print("The tempreture is bad today.")
-    print("Stay inside.")
+#if temp >= 0 and temp <= 30:
+#    print("The tempreture is good today.")
+#    print("Go outside!")
+#elif temp < 0 or temp > 30:
+#    print("The tempreture is bad today.")
+#    print("Stay inside.")
 
 #not je negace jako v php
-temp = input("Jaké je to teplo venku: ")
-temp = int(temp)
+#temp = input("Jaké je to teplo venku: ")
+#temp = int(temp)
 
-if not(temp >= 0 and temp <= 30):
-    print("Venku je ošklivě.")
-elif not(temp < 0 or temp > 30):
-    print("Dneska je venku hezké počasí.")
+#if not(temp >= 0 and temp <= 30):
+#    print("Venku je ošklivě.")
+#elif not(temp < 0 or temp > 30):
+#    print("Dneska je venku hezké počasí.")
 
-print("ahoj")
+
+
