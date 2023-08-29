@@ -205,3 +205,5 @@ for i in phone_number:
     if i == "-":
         continue
     print(i, end="")
+
+print("my name is dominik")
