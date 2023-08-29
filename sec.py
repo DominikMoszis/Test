@@ -50,8 +50,10 @@
 
 meal = ["hamburger","pizza","chese"]
 drink = ["soda","pepsi","cocacola"]
-food = meal + drink
-food.sort()
+food = [drink, meal]
 
-for i in food:
+for i in (drink):
+    print(i)
+
+for i in (meal):
     print(i)
