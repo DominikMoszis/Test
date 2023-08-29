@@ -85,6 +85,7 @@ print(name*10)
 #print("You are "+str(age)+" years old.")
 
 import math
+import time
 
 x = math.pi
 print(round(x))
@@ -158,4 +159,49 @@ print(website1[slice])
 #    print("Dneska je venku hezké počasí.")
 
 
+#nekonečný cyklus 
+#while 1==1:
+#    print("Help! I'm stuck in a loop.")
 
+#name = None
+#while not name:
+    #name = input("Enter your name: ")
+
+#print("Hello "+name+"!")
+
+#for i in range(10+1):
+    #print(i)
+
+#for i in "Dominik":
+    #print(i)
+
+#import time
+
+#for seconds in range(10,0,-1):
+    #print(seconds)
+    #time.sleep(1)
+
+#print("Happy new year!")
+
+#row = int(input("How namy rows: "))
+#column = int(input("How namy columns: "))
+#symbol = input("What type of symbol: ")
+
+#for i in range(row):
+    #for j in range(column):
+        #print(symbol, end="")
+    #print()
+
+
+#break
+#while True:
+    #name = input("What is your name: ")
+    #if name != "":
+        #break
+
+#continue
+phone_number = "123-456-7890"
+for i in phone_number:
+    if i == "-":
+        continue
+    print(i, end="")
