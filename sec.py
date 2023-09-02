@@ -48,12 +48,26 @@
 #name = name.__add__(".")
 #print(name)
 
-meal = ["hamburger","pizza","chese"]
-drink = ["soda","pepsi","cocacola"]
-food = [drink, meal]
+#meal = ["hamburger","pizza","chese"]
+#drink = ["soda","pepsi","cocacola"]
+#food = [drink, meal]
 
-for i in (drink):
+#meal = ["hamburger","pizza","chese"]
+#for i in meal:
+#    if i == "pizza":
+#        continue
+#    print(i)
+
+#tuple = je to něco jako pole, ale nelz eměnitjeho elementy uvnitř a narozdíl od pole se používaji () tyto závorky
+
+student = ("Dominik",17,"male")
+#řekne kolik se těchto elementu v poli nází
+print(student.count("Dominik"))
+#kde se element nachazi
+print(student.index("male"))
+
+for i in student:
     print(i)
 
-for i in (meal):
-    print(i)
+if "Dominik" in student:
+    print("Dominik is here!")
