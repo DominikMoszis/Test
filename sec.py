@@ -71,3 +71,32 @@ for i in student:
 
 if "Dominik" in student:
     print("Dominik is here!")
+
+#set => je to něco jako pole, ale je ohraničeno {} a je neindexované. Tzn, že když to pole vypíšu, 
+# tak ne nebypíše odle pořadí, ale random a když je tam více stejných elementů, tak je vypíše a 
+# pracuje s nimi jako s jedním
+
+set = {"knife","spoon","fork","fork","spoon"}
+dishes = {"bowl","plate"}
+#set.add("napkin")
+#set.remove("fork")
+#set.clear()
+#=> update je, že spojí sety dohromady
+#set.update(dishes)
+dinner_table = set.union(dishes)
+for i in dinner_table:
+    print(i)
+
+#auto = ["honda","ferrari","skoda"]
+#moto = ["bagatata","lambarjambar"]
+#auto_moto = [auto, moto]
+#for i in auto_moto:
+#    print(i)
+
+a = list(range(1,11))
+print(a)
+
+a = []
+for i in range(60):
+    a += [0] 
+    print(a)
