@@ -83,9 +83,9 @@ dishes = {"bowl","plate"}
 #set.clear()
 #=> update je, že spojí sety dohromady
 #set.update(dishes)
-dinner_table = set.union(dishes)
-for i in dinner_table:
-    print(i)
+#dinner_table = set.union(dishes)
+#for i in dinner_table:
+#    print(i)
 
 #auto = ["honda","ferrari","skoda"]
 #moto = ["bagatata","lambarjambar"]
@@ -93,10 +93,12 @@ for i in dinner_table:
 #for i in auto_moto:
 #    print(i)
 
-a = list(range(1,11))
-print(a)
+#a = list(range(1,11))
+#print(a)
 
-a = []
-for i in range(60):
-    a += [0] 
-    print(a)
+#a = []
+#or i in range(60):
+ #   a += [0] 
+#    print(a)
+
+print("ahoj")
