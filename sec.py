@@ -72,12 +72,12 @@ for i in student:
 if "Dominik" in student:
     print("Dominik is here!")
 
-#set => je to něco jako pole, ale je ohraničeno {} a je neindexované. Tzn, že když to pole vypíšu, 
-# tak ne nebypíše odle pořadí, ale random a když je tam více stejných elementů, tak je vypíše a 
+#set => je to něco jako pole, ale je ohraničeno {} a je neindexované a neuspořádané. Tzn, že když to pole vypíšu, 
+# tak ae nevypíše podle pořadí, ale random a když je tam více stejných elementů, tak je vypíše a 
 # pracuje s nimi jako s jedním
 
 set = {"knife","spoon","fork","fork","spoon"}
-dishes = {"bowl","plate"}
+dishes = {"bowl","plate","fork","knife"}
 #set.add("napkin")
 #set.remove("fork")
 #set.clear()
@@ -87,18 +87,27 @@ dishes = {"bowl","plate"}
 #for i in dinner_table:
 #    print(i)
 
-#auto = ["honda","ferrari","skoda"]
-#moto = ["bagatata","lambarjambar"]
-#auto_moto = [auto, moto]
-#for i in auto_moto:
-#    print(i)
+#zjistí co v setu je a v dishes není
+#print(set.difference(dishes))
 
-#a = list(range(1,11))
-#print(a)
+#zjiszí co mají společného
+print(set.intersection(dishes))
 
-#a = []
-#or i in range(60):
- #   a += [0] 
-#    print(a)
+#dictionary = je to něco jako set, ale je tam key:value
 
-print("ahoj")
+#countries = {'USA':'Washington DC',
+#             'Austria':'Wienna',
+#             'Norway':'Oslo'}
+#countries.update({"Germany":"Berlin"})
+#countries.update({"USA":"Las vegas"})
+#countries.pop("USA")
+#countries.clear()
+#když zjišťuji zda je tam nějaký klíč a nejsem si jist zda tam je, či ne použiji metodu get, protože je bezpečnější
+#print(countries.get("USA"))
+#print(countries.keys())
+#print(countries.values())
+#print(countries.items())
+
+#for key,value in countries.items():
+#    print(key,value)
+
