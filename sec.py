@@ -58,7 +58,10 @@
 #        continue
 #    print(i)
 
-#tuple = je to něco jako pole, ale nelz eměnitjeho elementy uvnitř a narozdíl od pole se používaji () tyto závorky
+#tuple = je to něco jako pole, ale nelze měnit jeho elementy uvnitř a narozdíl od pole se používaji () tyto závorky
+
+from pstats import SortKey
+
 
 student = ("Dominik",17,"male")
 #řekne kolik se těchto elementu v poli nází
@@ -111,3 +114,39 @@ print(set.intersection(dishes))
 #for key,value in countries.items():
 #    print(key,value)
 
+
+#name  = "dominik"
+#
+#if (name[0].islower()):
+#    name = name.capitalize()
+#print(name)
+
+#name = "dominik MOSZIS!"
+
+#first_name = name[:3].upper()
+#ast_name = name[8:].lower()
+#vypíše poslední znak => záporné indexování =>jde to pozpátku => -1 je první od konce
+#last_character = name[-1]
+#print(first_name)
+#print(last_name)
+#print(last_character)
+
+##funkce
+def hello():
+    print("ahoj")
+
+hello()
+
+
+from turtle import *
+bgcolor("yellow")
+color("red")
+begin_fill()
+pensize(3)
+left(50)
+forward(133)
+circle(50,200)
+right(140)
+circle(50,200)
+forward(133)
+end_fill()
