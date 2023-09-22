@@ -132,21 +132,24 @@ print(set.intersection(dishes))
 #print(last_character)
 
 ##funkce
-def hello():
-    print("ahoj")
+#def hello(name,surname,age):
+#    print("ahoj "+name+" "+surname)
+#    print("You are "+str(age)+" years old.")
 
-hello()
+#surname = "Moszis"
+#firs_name = "Dominik"
+#hello(firs_name,surname,17)
 
 
-from turtle import *
-bgcolor("yellow")
-color("red")
-begin_fill()
-pensize(3)
-left(50)
-forward(133)
-circle(50,200)
-right(140)
-circle(50,200)
-forward(133)
-end_fill()
+#def mul(number1,number2):
+#    return number1 * number2
+
+#x = mul(8,8)
+#print(x)
+
+def div(number1,number2):
+    return number1 / number2
+
+x = div(8,4)
+print(x)
+    
