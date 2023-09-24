@@ -60,27 +60,27 @@
 
 #tuple = je to něco jako pole, ale nelze měnit jeho elementy uvnitř a narozdíl od pole se používaji () tyto závorky
 
-from pstats import SortKey
+#from pstats import SortKey
 
 
-student = ("Dominik",17,"male")
+#student = ("Dominik",17,"male")
 #řekne kolik se těchto elementu v poli nází
-print(student.count("Dominik"))
+#print(student.count("Dominik"))
 #kde se element nachazi
-print(student.index("male"))
+#print(student.index("male"))
 
-for i in student:
-    print(i)
+#for i in student:
+#    print(i)
 
-if "Dominik" in student:
-    print("Dominik is here!")
+#if "Dominik" in student:
+#    print("Dominik is here!")
 
 #set => je to něco jako pole, ale je ohraničeno {} a je neindexované a neuspořádané. Tzn, že když to pole vypíšu, 
 # tak ae nevypíše podle pořadí, ale random a když je tam více stejných elementů, tak je vypíše a 
 # pracuje s nimi jako s jedním
 
-set = {"knife","spoon","fork","fork","spoon"}
-dishes = {"bowl","plate","fork","knife"}
+#set = {"knife","spoon","fork","fork","spoon"}
+#dishes = {"bowl","plate","fork","knife"}
 #set.add("napkin")
 #set.remove("fork")
 #set.clear()
@@ -94,7 +94,7 @@ dishes = {"bowl","plate","fork","knife"}
 #print(set.difference(dishes))
 
 #zjiszí co mají společného
-print(set.intersection(dishes))
+#print(set.intersection(dishes))
 
 #dictionary = je to něco jako set, ale je tam key:value
 
@@ -147,9 +147,39 @@ print(set.intersection(dishes))
 #x = mul(8,8)
 #print(x)
 
-def div(number1,number2):
-    return number1 / number2
+#def poradi(first,second,third):
+#    print("hello "+first+" "+second+" "+third)
 
-x = div(8,4)
-print(x)
+#poradi(first="Dominik",second="Mojzis",third="programmer")
+
+
+#num = input("Type a number: ")
+#num = float(num)
+#num = round(num)
+#num = abs(num)
+#print(num)
+
+#print(abs(round(float(input("Type in any number you want: ")))))
+
+#name = "Bro"
+
+#def my_name():
+#    print(name)
+
+#my_name()
+#print(name)
+
+
+#*args = když nevím kolik bude ve funkci parametrů dám tam * a název args
+
+#def cisla(*args):   #tady ne nemusí dávat number1,number2 atd. protože nevím kolik parametrů zadám při volání funkce
+#    num = 0
+#    for i in args:
+#        num += i
+#    return num
+
+#print(cisla(1,2,5,6))  #zde si mohu napsat kolik parametrů chci, protože nahoře mám *args
+
+
+
     
