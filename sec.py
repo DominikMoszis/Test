@@ -174,12 +174,10 @@
 
 #def cisla(*args):   #tady ne nemusí dávat number1,number2 atd. protože nevím kolik parametrů zadám při volání funkce
 #    num = 0
+#    args = list(args)
+#    args[0] = 0
 #    for i in args:
 #        num += i
 #    return num
 
 #print(cisla(1,2,5,6))  #zde si mohu napsat kolik parametrů chci, protože nahoře mám *args
-
-
-
-    
