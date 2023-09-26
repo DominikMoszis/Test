@@ -181,3 +181,23 @@
 #    return num
 
 #print(cisla(1,2,5,6))  #zde si mohu napsat kolik parametrů chci, protože nahoře mám *args
+
+
+def cisla(*args):
+    num = 0
+    args = list(args)
+    args[0] = 220
+    for i in args:
+        num += i
+    return num
+
+print(cisla(1,2,3,4,5))
+
+def cisla(*ags):
+    num = 0
+    ags = list(ags)
+    ags[2] = 23
+    for i in ags:
+        num += i
+    return num
+print(cisla(1,2,3,4,5))
