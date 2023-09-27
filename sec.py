@@ -185,9 +185,10 @@
 
 #kwards je to stejé jako args, ale převede to pole do keyword arguments 
 
-def names(**kwargs):
+
+def names(**kwards):
     print("Hello",end=" ")
-    for key,value in kwargs.items():
+    for key,value in kwards.items():
         print(value,end=" ")
 
-print(names(title="Ing",name="Dominik",surname="Mojzis"))
+names(title="Mr.",mane="Dom",surname="moj",last="fr")
