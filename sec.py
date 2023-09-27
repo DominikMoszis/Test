@@ -171,6 +171,7 @@
 
 
 #*args = když nevím kolik bude ve funkci parametrů dám tam * a název args
+#převede to do tuple
 
 #def cisla(*args):   #tady ne nemusí dávat number1,number2 atd. protože nevím kolik parametrů zadám při volání funkce
 #    num = 0
@@ -182,22 +183,11 @@
 
 #print(cisla(1,2,5,6))  #zde si mohu napsat kolik parametrů chci, protože nahoře mám *args
 
+#kwards je to stejé jako args, ale převede to pole do keyword arguments 
 
-def cisla(*args):
-    num = 0
-    args = list(args)
-    args[0] = 220
-    for i in args:
-        num += i
-    return num
+def names(**kwargs):
+    print("Hello",end=" ")
+    for key,value in kwargs.items():
+        print(value,end=" ")
 
-print(cisla(1,2,3,4,5))
-
-def cisla(*ags):
-    num = 0
-    ags = list(ags)
-    ags[2] = 23
-    for i in ags:
-        num += i
-    return num
-print(cisla(1,2,3,4,5))
+print(names(title="Ing",name="Dominik",surname="Mojzis"))
