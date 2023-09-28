@@ -186,9 +186,38 @@
 #kwards je to stejé jako args, ale převede to pole do keyword arguments 
 
 
-def names(**kwards):
-    print("Hello",end=" ")
-    for key,value in kwards.items():
-        print(value,end=" ")
+#def names(**kwards):
+#    print("Hello",end=" ")
+#    for key,value in kwards.items():
+#        print(value,end=" ")
 
-names(title="Mr.",mane="Dom",surname="moj",last="fr")
+#names(title="Mr.",mane="Dom",surname="moj",last="fr")
+
+
+#str.format() => funkce format 
+#animal="cow"
+##  item="moon"
+#toto je co by se psal normálně: print("The "+animal+"jumped over the "+item)
+#  print("The {} jumped over the {}".format(animal,item))
+#print("The {animal} jumped over the {item}".format(animal="cow",item="moon"))
+
+#number = 3.1421344
+#print("the number pi is {:.2f}".format(number))
+#number = 11
+#print("the number is {:,}".format(number))
+#print("the number is {:b}".format(number))
+#print("the number is {:o}".format(number))
+#print("the number is {:x}".format(number))
+#print("the number is {:E}".format(number))
+
+#import random
+
+#x = random.randint(1,6)
+#y = random.random()
+#my_list = ["rock","paper","scissors"]
+#z = random.choice(my_list)
+#cards = [1,2,3,4,5,"l","k","q"]
+#random.shuffle(cards)
+#print(cards)
+
+
