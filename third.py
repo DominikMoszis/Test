@@ -20,24 +20,73 @@
 
 
 #file detection
-import os
-path = "/Users/dominik/Desktop/test.txt"
+#import os
+#path = "/Users/dominik/Desktop/test.txt"
 
-if os.path.exists(path):
-    print("That location exists.")
-    if os.path.isfile(path):
-        print("That is a file.")
-    elif os.path.isdir(path):
-        print("That is a directory.")
-else:
-    print("That location doeasn't exist!")
+#if os.path.exists(path):
+#    print("That location exists.")
+#    if os.path.isfile(path):
+#       print("That is a file.")
+#    elif os.path.isdir(path):
+#        print("That is a directory.")
+#else:
+#    print("That location doeasn't exist!")
+
+#try:
+#    with open("/Users/dominik/Desktop/test.txt") as file:       #with automaticky zavře složku, kterou otevřel
+#        print(file.read())
+#except FileNotFoundError:
+#    print("This file doesn't exist.")
+
+#text = "\nHave a nice day!"
+#with open("/Users/dominik/Desktop/test.txt","a") as file:       #pokud chci jen zapsat tak napíšu "w", ale pokud chci přidat text aniž bych smazal to co jsem napsal před tím, tak napíšu "a"
+#    file.write(text)
+
+##kopírování složek: když dám copy() nebo coopyfile() nebo copy2() tak se vytvoří složka do které danou složku zkopíruji
+
+#import shutil
+#path = "/Users/dominik/Desktop/test.txt"
+
+#shutil.copyfile(path,"/Users/dominik/Desktop/copy.txt")     #je tam argument 1(to je path) a argument 2(to je soubor do kteréh to kopíruji)
+
+##moving a file
+
+import os
+
+#přesouvání
+source = "test.txt"
+destionation = "/Users/dominik/Desktop/test.txt"
 
 try:
-    with open("/Users/dominik/Desktop/test.txt") as file:       #with automaticky zavře složku, kterou otevřel
-        print(file.read())
+    if os.path.exists(destionation):
+        print("This file already exists.")
+    else:
+        os.replace(source,destionation)
+        print(source+" was succesfully moved.")
 except FileNotFoundError:
-    print("This file doesn't exist.")
+    print(source+" was not found.")
 
-text = "\nHave a nice day!"
-with open("/Users/dominik/Desktop/test.txt","a") as file:       #pokud chci jen zapsat tak napíšu "w", ale pokud chci přidat text aniž bych smazal to co jsem napsal před tím, tak napíšu "a"
+
+#zápis
+
+text = "Have a nice day\n"
+with open("/Users/dominik/Desktop/test.txt","w") as file:
     file.write(text)
+
+
+#directory
+import os
+
+#movin'
+source = "folder"
+direction = "/Users/dominik/Desktop/movedfolder"
+
+try:
+    if os.path.exists(direction):
+        print("This file already exists.")
+    else:
+        os.replace(source,direction)
+        print(source+" was succesfully moved!")
+except FileNotFoundError:
+    print(source+" was not found.")
+
