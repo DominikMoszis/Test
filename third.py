@@ -32,7 +32,12 @@ if os.path.exists(path):
 else:
     print("That location doeasn't exist!")
 
+try:
+    with open("/Users/dominik/Desktop/test.txt") as file:       #with automaticky zavře složku, kterou otevřel
+        print(file.read())
+except FileNotFoundError:
+    print("This file doesn't exist.")
 
-with open("/Users/dominik/Desktop/test.txt") as file:
-    print(file.read())
-
+text = "\nHave a nice day!"
+with open("/Users/dominik/Desktop/test.txt","a") as file:       #pokud chci jen zapsat tak napíšu "w", ale pokud chci přidat text aniž bych smazal to co jsem napsal před tím, tak napíšu "a"
+    file.write(text)
