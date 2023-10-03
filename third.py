@@ -49,44 +49,61 @@
 
 #shutil.copyfile(path,"/Users/dominik/Desktop/copy.txt")     #je tam argument 1(to je path) a argument 2(to je soubor do kteréh to kopíruji)
 
-##moving a file
+##moving a file  
 
-import os
+#import os
+#input
+#nput = input("Type the name of a file you want to move: ")
 
-#přesouvání
-source = "test.txt"
-destionation = "/Users/dominik/Desktop/test.txt"
+#moving a file
+#source = input
+#destionation = "/Users/dominik/Desktop/test.txt"
 
-try:
-    if os.path.exists(destionation):
-        print("This file already exists.")
-    else:
-        os.replace(source,destionation)
-        print(source+" was succesfully moved.")
-except FileNotFoundError:
-    print(source+" was not found.")
-
-
-#zápis
-
-text = "Have a nice day\n"
-with open("/Users/dominik/Desktop/test.txt","w") as file:
-    file.write(text)
+#try:
+#    if os.path.exists(destionation):
+#        print("This file already exists.")
+#    else:
+#        os.replace(source,destionation)
+#        print(source+" was succesfully moved.")
+#except FileNotFoundError:
+#    print(source+" was not found.")
 
 
-#directory
-import os
+#writing
+
+#text = "Have a nice day\n"
+#with open("/Users/dominik/Desktop/test.txt","w") as file:
+#    file.write(text)
+
+
+#moving a directory
+#import os
 
 #movin'
-source = "folder"
-direction = "/Users/dominik/Desktop/movedfolder"
+#source = "folder"
+#direction = "/Users/dominik/Desktop/movedfolder"
 
+#try:
+#    if os.path.exists(direction):
+#        print("This file already exists.")
+#    else:
+#        os.replace(source,direction)
+#        print(source+" was succesfully moved!")
+#except FileNotFoundError:
+#    print(source+" was not found.")
+
+#deleting a file
+
+import os
+
+input = input("Enter a file you want to remove: ")
+#removin' a file
+path = input
 try:
-    if os.path.exists(direction):
-        print("This file already exists.")
-    else:
-        os.replace(source,direction)
-        print(source+" was succesfully moved!")
+    os.remove(path)
 except FileNotFoundError:
-    print(source+" was not found.")
-
+    print("This file doesn't exist.")
+except PermissionError:
+    print("You don't have permitiont po delete that.")
+else:
+    print("The file was succesfully deleted.")
